@@ -1,6 +1,3 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-
 import sys
 
 if __name__ == '__main__':
@@ -12,8 +9,8 @@ if __name__ == '__main__':
         exit(1)
 
     found = False
-    for i in range(len(numbers) - 1):
-        if numbers[i] % 2 != 0 and numbers[i + 1] % 2 != 0:
+    for i, num in enumerate(numbers[:-1]):
+        if num % 2 != 0 and numbers[i + 1] % 2 != 0:
             print(f"Первая пара соседних нечетных чисел найдена в позициях {i} и {i + 1}")
             found = True
             break
