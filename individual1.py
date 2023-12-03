@@ -3,6 +3,7 @@
 
 import sys
 
+
 if __name__ == '__main__':
     numbers = tuple(map(int, input("Введите кортеж целых чисел через пробел: ").split()))
 
